@@ -16,15 +16,12 @@ from tensorflow.keras.optimizers import Adam
 nltk.download("punkt")
 nltk.download("wordnet")
 
-# Définir un optimiseur personnalisé si nécessaire
-custom_optimizer = Adam(learning_rate=0.001)
-
 # Construire le chemin complet vers le modèle
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..')) # retourner au chemin absolu du dossier parent 
 model_path = os.path.join(project_root, 'models', 'simple_chatbot_gen.h5')
 
 # Charger le modèle avec les objets personnalisés
-model = load_model(model_path, custom_objects={'Custom>Adam': custom_optimizer})
+model = load_model(model_path)
 
 lemmatizer = WordNetLemmatizer() # on initialise le lemmatizer
 
