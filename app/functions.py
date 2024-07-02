@@ -11,7 +11,6 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model # importer le modèle en trainé
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, Dropout
-from tensorflow.keras.optimizers import Adam
 
 nltk.download("punkt")
 nltk.download("wordnet")
