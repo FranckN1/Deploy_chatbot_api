@@ -19,7 +19,7 @@ nltk.download("wordnet")
 
 # Construire le chemin complet vers le modèle
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..')) # retourner au chemin absolu du dossier parent 
-model_path = os.path.join(project_root, 'models', 'chatbot_gen2.h5')
+model_path = os.path.join(project_root, 'models', 'chatbot_gen3.h5')
 
 # Charger le modèle avec les objets personnalisés
 model = load_model(model_path)
