@@ -2,7 +2,7 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8-slim
 
 WORKDIR /app
 
-COPY requirements /tmp/
+COPY requirements.txt /tmp/
 
 RUN pip install -r /tmp/requirements.txt
 
